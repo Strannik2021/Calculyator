@@ -9,10 +9,10 @@ public class Operation {
         String z = a + b ;
         if ( z.length() > 40) {
             String itog = z.substring(0,40);
-            System.out.println(itog + "...");
+            System.out.println("\"" + itog + "..." + "\"");
         }
         else
-            System.out.println(z);
+            System.out.println("\"" + z+"\"" );
 
 
     }
@@ -27,10 +27,10 @@ public class Operation {
         }
         if (result.length()>40  ) {
             String itog = result.substring(0,40);
-            System.out.println(itog + "...");
+            System.out.println("\"" + itog + "..." + "\"");
         }
         else
-            System.out.println(result);
+            System.out.println("\""+result+"\"");
     }
     public static void Raznitsya (String[] name) throws Exception {
 
@@ -52,7 +52,7 @@ public class Operation {
             System.out.println(itog + "...");
         }
         else
-            System.out.println(razn);
+            System.out.println("\""+ razn + "\"");
 
     }
 
@@ -67,11 +67,11 @@ public class Operation {
             System.out.println(itog + "...");
         }
         else
-            System.out.println(result);
+            System.out.println("\"" + result + "\"");
     }
     public static void Chislo (String x ) throws Exception {
 
-        String[] y = {"0","1","2","3","4","5","6","7","8","9"};
+        String[] y = {"0","1","2","3","4","5","6","7","8","9","10"};
         for (int i =0; i < y.length; i++){
             if (x.equals(y[i])) {
                 throw new Exception();
